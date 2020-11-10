@@ -1,0 +1,176 @@
+<?xml version="1t.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundanimal"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/bowmeow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바우미우 동물병원"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서울 중구 다산로 175"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#757575"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="20dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영업시간"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginBottom="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평일 09:00 ~ 21:00"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토요일 09:00 ~ 18:00"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공휴일 10:00 ~ 18:00"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            />
+        <Button
+            android:id="@+id/btn_reservation_start"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="예약하기"
+            android:textSize="34sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/walkbtn"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+        <CalendarView
+            android:id="@+id/cal_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E0CDAF"
+            android:layout_gravity="center"/>
+        <TimePicker
+            android:id="@+id/timepicker_one"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner"
+            android:numbersInnerTextColor="#ffffff"
+            android:background="#E0CDAF"
+             />
+        <Button
+            android:id="@+id/btn_reservation_stop"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="예약중지"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/walkbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="90dp"
+            />
+        <Button
+            android:id="@+id/btn_reservation_next"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="시간설정"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/walkbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="90dp"
+            />
+        <Button
+            android:id="@+id/btn_reservation_end"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="예약완료"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/walkbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="90dp"
+            />
+    </FrameLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
